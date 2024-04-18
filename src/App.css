@@ -13,6 +13,19 @@
   color: white;
 }
 
+.App-header a {
+  color: #6fc00d;
+  text-decoration: none;
+  padding: 10px 30px 10px 20px;
+  transition: color 0.3s ease;
+  margin-left: 50%;
+
+}
+
+.App-header a:hover {
+  color: #c00713;
+}
+
 .game-board {
   width: 400px;
   height: 400px;
@@ -32,11 +45,38 @@
   cursor: pointer;
 }
 
-/* Center the game board */
+
 .game {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 75vh;
   background-color: #f9f9f9;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.game-info button {
+  margin-top: 20px;
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-info button:hover {
+  background-color: #0056b3;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function TicTacToe() {
+export function TicTacToe() {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
   const winner = calculateWinner(board);
@@ -19,6 +19,11 @@ function TicTacToe() {
         {board[i]}
       </button>
     );
+  };
+
+  const resetGame = () => {
+    setBoard(Array(9).fill(null));
+    setXIsNext(true);
   };
 
   const status = winner
@@ -46,12 +51,13 @@ function TicTacToe() {
       </div>
       <div className="game-info">
         <div>{status}</div>
+        <button onClick={resetGame}>Reset Game</button>
       </div>
     </div>
   );
 }
 
-function calculateWinner(squares) {
+export function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
@@ -70,5 +76,3 @@ function calculateWinner(squares) {
   }
   return null;
 }
-
-export default TicTacToe;

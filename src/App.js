@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-import TicTacToe from "./Pages/TicTacToe";
+import { TicTacToe } from "./Pages/TicTacToe";
+
 import Home from "./Pages/Home";
 function App() {
   return (
