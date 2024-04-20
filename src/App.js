@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import { TicTacToe } from "./Pages/TicTacToe";
+import { Sudoku } from "./Pages/Sudoku";
 
 import Home from "./Pages/Home";
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/play-tic-tac-toe" element={<TicTacToe />} />
+        <Route path="/Sudoku" element={<Sudoku />} />
       </Routes>
     </div>
   );

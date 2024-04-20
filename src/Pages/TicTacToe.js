@@ -32,6 +32,7 @@ export function TicTacToe() {
 
   return (
     <div className="game">
+      <h1>{status}</h1>
       <div className="game-board">
         <div className="board-row">
           {renderSquare(0)}
@@ -50,7 +51,6 @@ export function TicTacToe() {
         </div>
       </div>
       <div className="game-info">
-        <div>{status}</div>
         <button onClick={resetGame}>Reset Game</button>
       </div>
     </div>

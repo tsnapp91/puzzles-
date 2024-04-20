@@ -13,6 +13,9 @@ function Home() {
         </Link>
         {"  O"}
       </p>
+      <Link to="/sudoku">
+        <button> - Sudoku - </button>
+      </Link>
     </div>
   );
 }
